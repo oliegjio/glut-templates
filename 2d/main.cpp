@@ -8,17 +8,9 @@ clock_t current_time = clock();
 clock_t last_time = current_time;
 float dt = 0;
 
-void setup()
-{
-
-}
-
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-
-
-
     glutSwapBuffers();
 }
 
@@ -44,8 +36,6 @@ void idle()
 
 int main(int argc, char **argv)
 {
-    setup();
-
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
     glutInitWindowPosition(0, 0);
